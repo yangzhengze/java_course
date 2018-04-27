@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 /**
  * 此版本将++运算符号识别为一个Token
- * @author liuji
+ * @author yzz
  *
  */
 public class Lex {

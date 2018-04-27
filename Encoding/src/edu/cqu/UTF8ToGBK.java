@@ -3,7 +3,7 @@ package edu.cqu;
 import java.io.UnsupportedEncodingException;
 /**
  * 文件编码为UTF-8
- * @author liuji
+ * @author yzz
  *
  */
 public class UTF8ToGBK {

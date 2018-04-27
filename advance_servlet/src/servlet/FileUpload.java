@@ -18,7 +18,7 @@ import javax.servlet.http.Part;
 
 @WebServlet("/upload")
 @MultipartConfig(  
-        location = "/Users/liuji/upload/",// The directory location where files will be stored
+        location = "/Users/yzz/upload/",// The directory location where files will be stored
         maxFileSize = 8388608,//The maximum size allowed for uploaded files.8388608=8MB  
         fileSizeThreshold = 819200//The size threshold after which the file will be written to disk 
         //maxRequestSize =  8*1024*1024*6 //The maximum size allowed for multipart/form-data requests  
@@ -39,7 +39,7 @@ public class FileUpload extends HttpServlet {
 			String fileName=getFileName(part);
 			if(fileName!=null)
 			{
-				//save this file to /Users/liuji/upload/
+				//save this file to /Users/yzz/upload/
 				part.write(fileName);
 				fileNames.add(fileName);
 			}

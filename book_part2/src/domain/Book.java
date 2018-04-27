@@ -1,7 +1,7 @@
 package domain;
 /**
  * 书籍
- * @author liuji
+ * @author yzz
  *
  */
 public class Book {

@@ -22,7 +22,7 @@ import dao.BookDao;
 import domain.Book;
 
 @WebServlet("/book")
-@MultipartConfig(location = "/Users/liuji/upload/", maxFileSize = 8388608, fileSizeThreshold = 819200)
+@MultipartConfig(location = "/Users/yzz/upload/", maxFileSize = 8388608, fileSizeThreshold = 819200)
 public class BookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -30,7 +30,7 @@ public class BookServlet extends HttpServlet {
 		super();
 	}
 
-	private static final String imageDir = "/Users/liuji/upload/";
+	private static final String imageDir = "/Users/yzz/upload/";
 
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -189,7 +189,7 @@ public class BookServlet extends HttpServlet {
 		Collection<Part> parts = request.getParts();
 		for (Part part : parts) {
 			if (part.getName().equals("image")) {
-				// 文件保存到 /Users/liuji/upload/{book.id+System.nanoTime()}
+				// 文件保存到 /Users/yzz/upload/{book.id+System.nanoTime()}
 				part.write(fileName);
 				break;
 			}
@@ -211,7 +211,7 @@ public class BookServlet extends HttpServlet {
 		Collection<Part> parts = request.getParts();
 		for (Part part : parts) {
 			if (part.getName().equals("image")) {
-				// 文件保存到 /Users/liuji/upload/{book.id+System.nanoTime()}
+				// 文件保存到 /Users/yzz/upload/{book.id+System.nanoTime()}
 				part.write(fileName);
 				break;
 			}

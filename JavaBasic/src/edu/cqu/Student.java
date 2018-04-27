@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * 自定义的类应该实行equals、hashCode和toString函数。
  * 利用Eclipse的功能可以很方便的生成equals和hashCode。
- * @author liuji
+ * @author yzz
  *
  */
 public class Student {

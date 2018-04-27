@@ -9,9 +9,9 @@
 <title>显示文件</title>
 </head>
 <body>
-<p>显示服务器目录/Users/liuji/upload目录下的所有文件</p>
+<p>显示服务器目录/Users/yzz/upload目录下的所有文件</p>
 <%
-	File dir=new File("/Users/liuji/upload");
+	File dir=new File("/Users/yzz/upload");
 	for(File file:dir.listFiles())
 	{
 %>
