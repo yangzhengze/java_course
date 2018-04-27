@@ -17,6 +17,7 @@ import domain.Book;
 public class BookDao {
 	//添加
 	public static Boolean add(final Book book) throws Exception {
+		
 		JDBCTemplate<Boolean> t = new Transaction<Boolean>() {
 			@Override
 			protected Boolean doTransaction(Connection conn) throws Exception {
@@ -41,10 +42,15 @@ public class BookDao {
 						.prepareStatement("select * from book where id=?");
 				ps.setString(1, id);
 				ps.execute();
+				
 				ResultSet rs = ps.getResultSet();
+				
 				Book book = null;
+				
 				if (rs.next()) {
+					
 					book = new Book();
+					
 					book.id = rs.getString("id");
 					book.name = rs.getString("name");
 					book.price = rs.getDouble("price");

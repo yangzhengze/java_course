@@ -22,6 +22,7 @@
 	<%
 		for(Product product:products)
 		{
+		
 	%>
 	<tr>
 		<td style="background-color:red"><%=product.getId() %></td>

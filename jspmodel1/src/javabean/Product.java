@@ -6,6 +6,7 @@ package javabean;
  */
 public class Product {
 	/**
+	 * java bean
 	 * 商品序号
 	 */
 	private String id;

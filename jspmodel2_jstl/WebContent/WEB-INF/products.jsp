@@ -13,6 +13,7 @@
 	<tr>
 		<td>序号</td><td>名称</td><td>价格（元）</td><td>介绍</td>
 	</tr>
+     
 	<c:forEach items="${ products}" var="product">
 	<tr>
 		<td>${product.id }</td>

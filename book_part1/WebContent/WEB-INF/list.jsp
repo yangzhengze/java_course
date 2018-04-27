@@ -14,7 +14,7 @@
 	<tr>
 		<td>序号</td><td>名称</td><td>价格（元）</td><td>介绍</td><td>图片</td><td>操作</td>
 	</tr>
-	<c:forEach items="${ books}" var="book">
+	<c:forEach items="${books}" var="book">
 	<tr>
 		<td>${book.id }</td>
 		<td>${book.name }</td>

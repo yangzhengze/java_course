@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductList {
+	
 	private List<Product> products=new ArrayList<Product>();
+	
 	public ProductList()
 	{
 		products.add(new Product("1","C++程序设计",20.0,"一本书"));

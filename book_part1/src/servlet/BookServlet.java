@@ -124,10 +124,15 @@ public class BookServlet extends HttpServlet {
 
 	private void listBooks(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
+		
 		List<Book> books = BookDao.getAll();
+		
 		request.setAttribute("books", books);
+		
+		
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/WEB-INF/list.jsp");
+		
 		rd.forward(request, response);
 	}
 

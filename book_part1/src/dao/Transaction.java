@@ -7,7 +7,9 @@ public abstract class Transaction<T> extends JDBCTemplate<T> {
 	@Override
 	public T execute() throws Exception{
 		Connection conn=getConnection();
+		
 		conn.setAutoCommit(false);
+		
 		try{
 			T result=doTransaction(conn);
 			conn.commit();

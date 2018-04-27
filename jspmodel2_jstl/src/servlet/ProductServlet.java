@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/products") //servletӳ�䵽/products
+@WebServlet("/products") //servlet映射/products
 public class ProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -25,8 +25,11 @@ public class ProductServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ProductList pList=new ProductList();
+		
 		List<Product> products=pList.getAllProducts();
+		
 		request.setAttribute("products", products);
+		
 		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/products.jsp");
 		rd.forward(request, response);
 	}

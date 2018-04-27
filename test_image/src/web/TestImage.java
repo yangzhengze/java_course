@@ -69,7 +69,7 @@ public class TestImage extends HttpServlet {
 		response.setHeader("Pragma", "No-cache");
 	    response.setHeader("Cache-Control", "no-cache");
 	    response.setDateHeader("Expires", 0);
-       response.setContentType("image/jpg");
+        response.setContentType("image/jpg");
 		String randomString=getRandomString();
 		int width=100;//图片宽度
 		int height=30;//图片高度
