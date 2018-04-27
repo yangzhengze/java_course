@@ -10,7 +10,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 /**
  * 字符编码过滤器，将所有request和response的字符编码设置为UTF-8
- * @author liuji
+ * @author yzz
  *
  */
 @WebFilter("/*") //过滤所有的URL地址

@@ -1,7 +1,7 @@
 package javabean;
 /**
  * 商品
- * @author liuji
+ * @author yzz
  *
  */
 public class Product {
