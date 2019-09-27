@@ -1,0 +1,32 @@
+命名习惯：
+	1.变量
+		以好记为基本,一眼就能看出来
+		面积（area/mianji）
+	    大小写敏感
+	    
+	    小写字母开头，其他后面首字母大写
+	    savedScannerPosition
+	   
+	   
+	 2.类类型：
+	 	首字母必须大写，驼峰命名方式
+	 		Test
+	 		TestHello
+	 		
+	 3.函数（行为）
+	 	小写字母开头，其他后面首字母大写
+	    savedScannerPosition
+	 4.包名
+	 	必须是小写字母，而且是以"."分割
+	 	cn.edu.asu.mianji
+         cn\edu\asu\mianji	
+注释：
+	1.单行注释
+	//
+	2.多行注释
+	/*
+	*/		
+	3.javadoc
+	/**
+	
+	*/
