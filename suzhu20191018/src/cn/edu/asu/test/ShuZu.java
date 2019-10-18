@@ -1,4 +1,7 @@
 package cn.edu.asu.test;
+
+import java.util.Arrays;
+
 /**
  * 数组
  * 		存储同个类型的多个数据的集合
@@ -44,7 +47,7 @@ public class ShuZu {
 		}
 		
 		/**
-		 * 输出
+		 * 传统输出
 		 */
 		System.out.println(c[2]);
 		for(int i=0;i<5;i++) {
@@ -54,12 +57,47 @@ public class ShuZu {
 		for(int j=0;j<5;j++) {
 			System.out.println("d["+j+"]="+d[j]);
 		}
+		/**
+		 *foreach输出
 		 
+		 */
+		  for (int test : d) {
+			System.out.println("d[]"+test);
+		}
+		 double [] test1= {1,9,2,3,5};
+		 /**
+		  * Arrays
+		  * 	 主要是对我们数组的操作
+		  * 	  
+		  */
+		 Arrays.sort(test1);
+		 
+		 /**
+			 *foreach输出
+			 
+			 */
+			  for (double test : test1) {
+				System.out.println("test[]"+test);
+			}
 		  /**
 		   * foreach
 		   *    本质还是循环，简单
 		   *     for(循环;;)
+		   *     for(循环变量;判断;自变量++/--){
+               	}
+	          foreach(循环变量:数组或者集合){
+			}
 		   */
+		
+			  
+			  /**
+			   * 二维数组
+			   * int [][] a;
+			   */
+		   int [][] testa= {{1,2,3},
+				            {3,4,5},
+				            {6,7,8}
+		                   };
 		  
 		
 		
