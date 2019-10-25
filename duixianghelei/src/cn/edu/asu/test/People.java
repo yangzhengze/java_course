@@ -9,16 +9,16 @@ public class People {
 	/**
 	 * 定义静态变量
 	 */
-	static double PI=3.1415926;
+  public static int zuiBa =1;
 	/**
 	 * 眼睛  
 	 *
 	 */
-	int eye;
+  private int eye;
 	/**
 	 * 腿
 	 */
-	int  leg;
+  protected	int  leg;
 	/**
 	 * 年龄
 	 */
@@ -33,18 +33,25 @@ public class People {
 	Yuan yaun;
 	
 	static void test() {
-		System.out.println(PI);
+		System.out.println(zuiBa);
 	//System.out.println(eye);
 	}
 	
 	public static void main(String[] args) {
+		//创建wo的对象，然后进行赋值
 		People wo=new People();
 		
 		System.out.println(wo.age);
+		System.out.println(wo.eye);
 		System.out.println(wo.XB);
 		System.out.println(wo.yaun);
-		System.out.println(wo.PI);
-		System.out.println(People.PI);
+		System.out.println("wo.zuiBa="+wo.zuiBa);
+		wo.zuiBa=5;
+		
+		//创建wo的对象，然后进行赋值
+		People ta=new People();
+		
+		System.out.println("ta.zuiBa="+ta.zuiBa);
 		
 	}
 
