@@ -14,12 +14,13 @@ public class Test {
 		    asuy.setName("安顺学院");
 		    asuy.getBMI();
 		    
-		    BIM asul=new BIM();
+		   BIM asul=new BIM();
 		    asul.setAge(20);
 		    asul.setHeight(1.70);
 		    asul.setWeight(60);
 		    asul.setName("安顺学院");
-		    asul.setAddress("安顺市西秀区");
+		    asul.address="安顺市西秀区";
+		   // asul.setAddress("安顺市西秀区");
 		    asul.getBMI();    
 		
 		
